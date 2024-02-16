@@ -1,0 +1,39 @@
+﻿<Application x:Class="Wetter_WebScraping_WpfApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Wetter_WebScraping_WpfApp"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
+        
+        <Style TargetType="Button" >
+            <Setter Property="Cursor" Value="Hand"></Setter>
+            <Setter Property="FontSize" Value="24"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="Margin" Value="5" />
+                    <Setter Property="Background" Value="LightSlateGray" />
+                    <Setter Property="CornerRadius" Value="5" />
+                    <Setter Property="MaxHeight" Value="80" />
+                    <Setter Property="MaxWidth" Value="200" />
+                </Style>
+            </Style.Resources>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="MinWidth" Value="120" />
+            <Setter Property="MinHeight" Value="20" />
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Background" Value="LightGray"/>    
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
+        
+    </Application.Resources>
+</Application>
